@@ -29,7 +29,7 @@
 #include "periph_sdcard.h"
 #include "periph_lcd.h"
 #include "periph_button.h"
-#include "tca9554.h"
+// #include "tca9554.h"
 #include "board.h"
 
 static const char *TAG = "AUDIO_BOARD";
