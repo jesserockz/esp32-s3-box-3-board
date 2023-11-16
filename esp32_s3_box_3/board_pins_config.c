@@ -27,6 +27,7 @@
 #include "esp_log.h"
 #include "soc/soc_caps.h"
 
+#include <board_pins_config.h>
 #include "audio_error.h"
 #include "audio_mem.h"
 #include "board.h"
@@ -56,7 +57,7 @@ esp_err_t get_i2s_pins(i2s_port_t port, i2s_pin_config_t *i2s_config) {
     i2s_config->data_in_num = GPIO_NUM_16;
     i2s_config->mck_io_num = GPIO_NUM_2;
   } else {
-    memset(i2s_config, -1, sizeof(board_i2s_pin_t));
+    memset(i2s_config, -1, sizeof(i2s_pin_config_t));
     ESP_LOGE(TAG, "I2S PORT %d is not supported, please use I2S PORT 0", port);
     return ESP_FAIL;
   }
