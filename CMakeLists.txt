@@ -2,8 +2,8 @@
 set(COMPONENT_REQUIRES)
 set(COMPONENT_PRIV_REQUIRES audio_sal audio_hal esp_dispatcher esp_peripherals display_service)
 
-if(CONFIG_ESP32_S3_BOX_LITE_BOARD)
-message(STATUS "Current board name is " CONFIG_ESP32_S3_BOX_LITE_BOARD)
+if(CONFIG_ESP32_S3_BOX_3_BOARD)
+message(STATUS "Current board name is " CONFIG_ESP32_S3_BOX_3_BOARD)
 list(APPEND COMPONENT_ADD_INCLUDEDIRS ./esp32_s3_box_3)
 set(COMPONENT_SRCS
 ./esp32_s3_box_3/board.c
