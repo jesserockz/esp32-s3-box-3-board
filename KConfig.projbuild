@@ -5,7 +5,7 @@ menu "Audio HAL"
       default ESP_LYRAT_V4_3_BOARD
       help
           Select an audio board to use with the ESP-ADF
-  config ESP32_S3_BOX_LITE_BOARD
+  config ESP32_S3_BOX_3_BOARD
       bool "ESP32-S3-BOX-3"
 
   endchoice
