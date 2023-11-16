@@ -124,6 +124,14 @@ audio_board_handle_t audio_board_get_handle(void);
  */
 esp_err_t audio_board_deinit(audio_board_handle_t audio_board);
 
+/**
+ * @brief  Get the gpio number for sdcard power control
+ *
+ * @return  -1      error
+ *          Others  SDCard power GPIO
+ */
+int8_t get_sdcard_power_ctrl_gpio(void);
+
 #ifdef __cplusplus
 }
 #endif

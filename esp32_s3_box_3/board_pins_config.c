@@ -27,7 +27,6 @@
 #include "esp_log.h"
 #include "soc/soc_caps.h"
 
-#include <board_pins_config.h>
 #include "audio_error.h"
 #include "audio_mem.h"
 #include "board.h"
