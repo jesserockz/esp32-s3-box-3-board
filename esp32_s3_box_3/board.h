@@ -28,10 +28,10 @@
 #include "audio_hal.h"
 #include "board_def.h"
 #include "board_pins_config.h"
-#include "esp_peripherals.h"
 #include "display_service.h"
-#include "periph_sdcard.h"
+#include "esp_peripherals.h"
 #include "periph_lcd.h"
+#include "periph_sdcard.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -41,8 +41,8 @@ extern "C" {
  * @brief Audio board handle
  */
 struct audio_board_handle {
-    audio_hal_handle_t audio_hal; /*!< audio hardware abstract layer handle */
-    audio_hal_handle_t adc_hal;   /*!< adc hardware abstract layer handle */
+  audio_hal_handle_t audio_hal; /*!< audio hardware abstract layer handle */
+  audio_hal_handle_t adc_hal;   /*!< adc hardware abstract layer handle */
 };
 
 typedef struct audio_board_handle *audio_board_handle_t;

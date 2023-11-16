@@ -25,6 +25,7 @@
 #ifndef _AUDIO_BOARD_DEFINITION_H_
 #define _AUDIO_BOARD_DEFINITION_H_
 
+// clang-format off
 /**
  * @brief LCD SCREEN Function Definition
  */
@@ -123,3 +124,4 @@ extern audio_hal_func_t AUDIO_CODEC_ES7210_DEFAULT_HANDLE;
     }                                                  \
 }
 #endif
+// clang-format on
